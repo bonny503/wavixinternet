@@ -49,31 +49,31 @@ const products = [
   {
     name: "HG8546M GPON / XPON Router",
     price: "From 28 USDT",
-    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
+    image: "assets/products/huawei-hg8546m-router.jpeg",
     features: ["Fiber-ready router", "Good for homes and small offices", "Installation available"],
   },
   {
     name: "CAT6 Indoor Cable",
     price: "From 0.35 USDT per metre",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1100&q=80",
+    image: "assets/products/cat6-outdoor-blue.jpeg",
     features: ["For rooms, offices and router points", "Neat trunking option", "Tested after installation"],
   },
   {
     name: "CAT6 Outdoor Cable",
     price: "From 0.55 USDT per metre",
-    image: "https://images.unsplash.com/photo-1581091870622-2f9df86f35f1?auto=format&fit=crop&w=1100&q=80",
+    image: "assets/products/cat6-outdoor-voltacomm.jpeg",
     features: ["For estates and outdoor runs", "Weather-resistant routing", "Pole or wall path planning"],
   },
   {
     name: "Used Tenda Routers",
     price: "From 15 USDT",
-    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
+    image: "assets/products/three-antenna-router.jpeg",
     features: ["Tested used units", "Good for Wi-Fi extension", "Setup support included"],
   },
   {
     name: "Used TP-Link Routers",
     price: "From 18 USDT",
-    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
+    image: "assets/products/router-front-box.jpeg",
     features: ["Tested before sale", "Home and office use", "Can be configured as access point"],
   },
   {
