@@ -49,37 +49,43 @@ const products = [
   {
     name: "HG8546M GPON / XPON Router",
     price: "From 28 USDT",
-    image: "./assets/products/huawei-hg8546m-router.jpeg",
+    image: "assets/products/huawei-hg8546m-router.jpeg",
+    fallback: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
     features: ["Fiber-ready router", "Good for homes and small offices", "Installation available"],
   },
   {
     name: "CAT6 Indoor Cable",
     price: "From 0.35 USDT per metre",
-    image: "./assets/products/cat6-outdoor-blue.jpeg",
+    image: "assets/products/cat6-outdoor-blue.jpeg",
+    fallback: "https://images.unsplash.com/photo-1606765962248-7ff407b51667?auto=format&fit=crop&w=1100&q=80",
     features: ["For rooms, offices and router points", "Neat trunking option", "Tested after installation"],
   },
   {
     name: "CAT6 Outdoor Cable",
     price: "From 0.55 USDT per metre",
-    image: "./assets/products/cat6-outdoor-voltacomm.jpeg",
+    image: "assets/products/cat6-outdoor-voltacomm.jpeg",
+    fallback: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1100&q=80",
     features: ["For estates and outdoor runs", "Weather-resistant routing", "Pole or wall path planning"],
   },
   {
     name: "Used Tenda Routers",
     price: "From 15 USDT",
-    image: "./assets/products/three-antenna-router.jpeg",
+    image: "assets/products/three-antenna-router.jpeg",
+    fallback: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
     features: ["Tested used units", "Good for Wi-Fi extension", "Setup support included"],
   },
   {
     name: "Used TP-Link Routers",
     price: "From 18 USDT",
-    image: "./assets/products/router-front-box.jpeg",
+    image: "assets/products/router-front-box.jpeg",
+    fallback: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=80",
     features: ["Tested before sale", "Home and office use", "Can be configured as access point"],
   },
   {
     name: "CCTV Camera Kits",
     price: "From 120 USDT",
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1100&q=80",
+    fallback: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1100&q=80",
     features: ["DVR/NVR options", "Remote phone viewing", "Indoor and outdoor cameras"],
   },
 ];
@@ -151,7 +157,7 @@ function renderProducts() {
     .map(
       (product) => `
         <article class="product-card">
-          <img src="${product.image}" alt="${product.name}">
+          <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.onerror=null; this.src='${product.fallback}';">
           <div>
             <h3>${product.name}</h3>
             <strong class="product-price">${product.price}</strong>
